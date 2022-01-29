@@ -1,0 +1,8 @@
+/* h2 {
+    color: red;
+} */
+.vote {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

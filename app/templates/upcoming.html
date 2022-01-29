@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title%}Movies Watchlist - Upcoming Movies{% endblock%}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <h1 class="text-success" style="text-align: center;margin-top: 5.3rem;margin-bottom: 4rem">Upcoming Movies</h1>
+        {% for data in data_link %}
+        <div class="col-md-3">
+            <div class="card shadow">
+                <img src="{{data.poster}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><strong>{{data.title}}</strong></h5>
+                  <p class="card-text">{{data.overview}}</p>
+                  <div class="vote">
+                      <div class="vote-average">
+                        <p><strong>Vote Average: </strong>r{{data.vote_average}}</p>
+                      </div>
+                      <div class="vote-count">
+                        <p><strong>Vote Count: </strong>{{data.vote_count}}</p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        {% endfor%}
+    </div>
+</div>
+{% endblock  %}
+   
