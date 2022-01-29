@@ -1,4 +1,4 @@
-## Movie Wachlist
+## Movie Watchlist
 ## Author: Crispus Njenga
 ## Technologies Used
 * Python3.
