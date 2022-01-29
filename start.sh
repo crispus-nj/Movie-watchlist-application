@@ -1,1 +1,1 @@
-python3 run.py server
+python3 app.py server
